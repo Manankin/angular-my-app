@@ -1,13 +1,5 @@
 import { Component } from '@angular/core';
 
-// function isDanger(str: String) {
-//   if (str.length === 0) {
-//     return false
-//   }
-
-//   return str.length < 8 ? true : false;
-// }
-
 function hasLetter(str: String) {
   return str.split('').some(char => letters.includes(char.toLowerCase()));
 }
