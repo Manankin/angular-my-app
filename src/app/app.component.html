@@ -174,17 +174,30 @@
       <h1>Hello Dmytro</h1>
       <div class="card">
         <p>Create your password in field below. Remember that you can use any letters, numbers and special symbols</p>
+        <br>
         <form action="">
           <input
             name="password"
-            type="text"
-            placeholder="password"
+            type="password"
+            [(ngModel)]="inputString"
           >
         </form>
         <div class="password-qualify">
-          <div class="password-qualify__part" [class]="{'hard': true, 'medium': true, 'easy': true}"></div>
-          <div class="password-qualify__part" [class]="{'hard': true, 'medium': true, 'easy': true}"></div>
-          <div class="password-qualify__part" [class]="{'hard': true, 'medium': true, 'easy': true}"></div>
+          <div
+            class="password-qualify__part"
+            [class]="{'danger': isDanger(inputString), 'hard': isHard(inputString), 'medium': isMedium(inputString), 'easy': isEasy(inputString)}"
+          >
+          </div>
+          <div
+            class="password-qualify__part"
+            [class]="{'danger': isDanger(inputString), 'hard': isHard(inputString), 'medium': isMedium(inputString)}"
+          >
+          </div>
+          <div
+            class="password-qualify__part"
+            [class]="{'danger': isDanger(inputString), 'hard': isHard(inputString)}"
+          >
+          </div>
         </div>
       </div>
       <div> Your password is: {{inputString}} </div>

@@ -1,11 +1,13 @@
 .password-qualify {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
 }
 
 .password-qualify__part {
-  width: 8px;
-  height: 8px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background-color: #cacaca;
 }
@@ -14,7 +16,7 @@ input {
   width: 100%;
 }
 
-.easy {
+.danger, .easy {
   background-color: tomato;
 }
 

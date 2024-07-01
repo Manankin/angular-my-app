@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.0.0",
   "scripts": {
+    "deploy": "ng deploy --base-href=/angular-my-app/",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
@@ -27,6 +28,7 @@
     "@angular/cli": "^18.0.6",
     "@angular/compiler-cli": "^18.0.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^2.0.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
